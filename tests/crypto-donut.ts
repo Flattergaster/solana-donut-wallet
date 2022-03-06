@@ -19,6 +19,8 @@ describe('crypto-donut', () => {
             program.programId
         );
 
+        console.log('wallet PDA: ' + wallet.toString())
+
         await program.rpc.createWallet({
             accounts: {
                 wallet: wallet,
@@ -41,6 +43,8 @@ describe('crypto-donut', () => {
             [wallet.toBuffer()],
             program.programId
         );
+
+        console.log('ledger PDA: ' + ledger.toString())
 
         await program.rpc.createLedger({
             accounts: {

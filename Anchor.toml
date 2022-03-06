@@ -1,13 +1,15 @@
 [features]
 seeds = false
 [programs.localnet]
-crypto_donut = "Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFsLnS"
+crypto_donut = "GPhW8yzphVJyX7XzUhDaKHbWVSviwvKqoxuWLaiAMkAi"
+[programs.devnet]
+crypto_donut = "GPhW8yzphVJyX7XzUhDaKHbWVSviwvKqoxuWLaiAMkAi"
 
 [registry]
 url = "https://anchor.projectserum.com"
 
 [provider]
-cluster = "localnet"
+cluster = "devnet"
 wallet = "/home/alexander/.config/solana/id.json"
 
 [scripts]
